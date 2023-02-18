@@ -1,16 +1,13 @@
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { useContext } from "react"
-import { ColorModeContext } from "./_app";
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
-  // darkmode them function
-  const { toggleColorMode } = useContext(ColorModeContext);
+  const { t } = useTranslation()
 
   return (
     <>
-      <Typography variant="h1" color="primary">Hello Amin</Typography>
-      <Button onClick={toggleColorMode} color="primary">Hello</Button>
+      <Typography variant="h1" color="text" onClick={() => {
+      }}>{t("common:hello")}</Typography>
     </>
   )
 }

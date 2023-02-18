@@ -1,0 +1,29 @@
+/*#region theme mode */
+.lightModeIcon{
+  animation: sun 5s linear infinite; 
+  color: #e1e10b;
+}
+
+@keyframes sun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+.darkModeIcon{
+  animation: moon 2s linear infinite alternate; 
+  color: navajowhite;
+}
+
+@keyframes moon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+/* #endregion */

@@ -26,12 +26,24 @@ export default function App({ Component, pageProps }: AppProps) {
             mode === "light" ?
               {
                 primary: {
-                  main: "#f44336"
-                }
+                  main: "#EEEEEE"
+                },
+                secondary: {
+                  main: "#00ADB5"
+                },
+                text: {
+                  primary: "#393E46"
+                },
               } : {
                 primary: {
-                  main: "#2196f3"
-                }
+                  main: "#393E46"
+                },
+                secondary: {
+                  main: "#00ADB5"
+                },
+                text: {
+                  primary: "#EEEEEE"
+                },
               }
           )
         }
